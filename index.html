@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Chat App</title>
+  <link rel='stylesheet' href='app.css'>
+</head>
+<body>
+  <div id='appContainer' class='flex-column'>
+    <div id='mainContent' class='container flex-grow-1 flex-column flex'>
+      <section id='chat' class='flex-grow-1 flex-column ' >
+        <div id='messagesList' class=' flex flex-column flex-grow-1'></div>
+        <form id='messageForm' class='flex mb-2'>
+            <input type='text' name='username' id='usernameInput' class='flex-grow-1' placeholder='set the username' >
+            <input type='text' name='message' id='messageInput' class='flex-grow-6' placeholder='enter a message'>
+            <button id='submitBtn'>Send</button>
+          </form>
+      </section>
+  </div>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js'></script>
+<script src=app.js></script>
+</html>
